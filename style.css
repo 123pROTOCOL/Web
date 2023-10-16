@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+.example {
+    background-image: url("image.jpg");
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 6rem 0;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .example {
+        background-attachment: scroll;
+   }
+}
+
+.pg2 {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-family: cursive;
+}
+
+.buffer {
+    width: 100%;
+    min-height: 40vh;
+    background-image: linear-gradient(to right, rgb(128, 128, 128), rgb(0, 0, 0));
+}
+
+.buffer1 {
+    width: 50%;
+    border-right: solid 3px black;
+}
+
+.buffer2 {
+    width: 50%;
+}
+
+.second {
+    font-size: 65px;
+    align-self: center;
+    text-align: center;
+    color: white;
+    margin-top: 207px;
+}
+
+.banner {
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    row-gap: 4rem;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 98%;
+    margin: auto;
+    padding: 1% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.title {
+    font-size: 65px;
+    align-self: center;
+    text-align: center;
+    color: white;
+    margin-top: 207px;
+}
